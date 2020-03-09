@@ -1,0 +1,44 @@
+.text-field{
+	-fx-background-color: none;
+	-fx-border-color: #363636;
+	-fx-text-fill: gray;
+}
+
+.password-field{
+	-fx-background-color: none;
+	-fx-border-color: #363636;
+	-fx-text-fill: gray;
+}
+
+.text-field:focused{
+	-fx-border-color: #0563BB;
+}
+
+.password-field:focused{
+	-fx-border-color: #0563BB;
+}
+
+.date-picker{
+	-fx-background-color: none;
+	-fx-border-color: #363636;
+	-fx-text-fill: white;
+}
+
+.button_inicial {
+	-fx-background-color: #095572;
+	-fx-border:black;
+	-fx-border-radius: 8px;	
+	-fx-padding: 7px 5px;
+	-fx-display: inline-block;
+	-fx-text-align: center;
+	-fx-webkit-transition-duration: 10s;
+	-fx-transition-duration:10s;
+}
+
+.button_inicial:hover{
+	-fx-background-color: #0563BB;	
+}
+
+.button_inicial:pressed{
+	-fx-background-color: #003F79;	
+}

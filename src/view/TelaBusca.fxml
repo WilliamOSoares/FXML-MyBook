@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@resources/CSS%20Code/PerfilCSS.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaBuscaController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1C1C1C;">
+         <children>
+            <Separator layoutY="25.0" prefHeight="38.0" prefWidth="600.0" />
+            <TextField fx:id="txBuscarAmigos" layoutX="129.0" layoutY="10.0" prefHeight="25.0" prefWidth="229.0" promptText="Buscar amigos... " styleClass="textField" />
+            <Button fx:id="btBuscar" layoutX="363.0" layoutY="6.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="49.0" styleClass="buttonCima" text="Buscar" />
+            <Button fx:id="btInicio" layoutX="484.0" layoutY="6.0" mnemonicParsing="false" styleClass="buttonCima" text="Inicio" />
+            <Button fx:id="btSair" layoutX="539.0" layoutY="6.0" mnemonicParsing="false" styleClass="buttonCima" text="Sair" />
+            <ImageView fitHeight="31.0" fitWidth="75.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@resources/images/Logo%20MyBook%20-%20Branco.png" />
+               </image>
+            </ImageView>
+            <ScrollPane layoutY="49.0" prefHeight="362.0" prefWidth="600.0" style="-fx-background-color: #1c1c1c;">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="507.0" prefWidth="585.0" style="-fx-background-color: #1c1c1c;">
+                     <children>
+                        <ScrollPane hbarPolicy="NEVER" layoutX="27.0" layoutY="27.0" prefHeight="442.0" prefWidth="539.0">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="539.0">
+                                 <children>
+                                    <ListView fx:id="lvwBuscaAmigos" onMouseClicked="#visitar" prefHeight="442.0" prefWidth="539.0" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

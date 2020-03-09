@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="293.0" prefWidth="481.0" style="-fx-background-color: #1C1C1C;" stylesheets="@resources/CSS%20Code/PerfilCSS.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BuscaAvancadaController">
+   <children>
+      <TextField fx:id="txBuscaAvancada" alignment="CENTER" layoutX="38.0" layoutY="120.0" prefHeight="25.0" prefWidth="405.0" promptText="Busca Avançada" styleClass="textField" />
+      <Button fx:id="btCancelar" layoutX="213.0" layoutY="248.0" mnemonicParsing="false" prefHeight="8.0" prefWidth="60.0" styleClass="buttonPerfil" text="Cancelar" />
+      <ImageView fitHeight="86.0" fitWidth="141.0" layoutX="170.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/images/Logo%20MyBook%20-%20Branco.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btBuscaCidade" layoutX="46.0" layoutY="159.0" mnemonicParsing="false" prefHeight="9.0" prefWidth="124.0" styleClass="buttonPerfil" text="Busca por cidade" />
+      <Button fx:id="btBuscaUsername" layoutX="179.0" layoutY="159.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="124.0" styleClass="buttonPerfil" text="Busca por username" />
+      <Button fx:id="btBuscaNome" layoutX="311.0" layoutY="159.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="124.0" styleClass="buttonPerfil" text="Busca por nome" />
+   </children>
+</AnchorPane>

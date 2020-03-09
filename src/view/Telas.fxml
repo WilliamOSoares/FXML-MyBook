@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@resources/CSS%20Code/PerfilCSS.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelasController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1C1C1C;">
+         <children>
+            <Separator layoutY="25.0" prefHeight="38.0" prefWidth="600.0" />
+            <TextField fx:id="txBuscarAmigos" layoutX="129.0" layoutY="10.0" prefHeight="25.0" prefWidth="229.0" promptText="Buscar amigos... " styleClass="textField" />
+            <Button fx:id="btBuscar" layoutX="363.0" layoutY="6.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="49.0" styleClass="buttonCima" text="Buscar" />
+            <Button fx:id="btInicio" layoutX="484.0" layoutY="6.0" mnemonicParsing="false" styleClass="buttonCima" text="Inicio" />
+            <Button fx:id="btSair" layoutX="539.0" layoutY="6.0" mnemonicParsing="false" styleClass="buttonCima" text="Sair" />
+            <ScrollPane fx:id="panePerfil" hbarPolicy="NEVER" layoutY="45.0" prefHeight="355.0" prefWidth="600.0" style="-fx-background-color: #1C1C1C;" vbarPolicy="ALWAYS">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="490.0" prefWidth="598.0" style="-fx-background-color: #1C1C1C;">
+                     <children>
+                        <ImageView fx:id="imgPerfil" fitHeight="150.0" fitWidth="129.0" layoutX="25.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/images/default_avatar.png" />
+                           </image></ImageView>
+                        <Button fx:id="btListarAmigos" layoutX="21.0" layoutY="216.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="144.0" styleClass="buttonPerfil" text="Listar amigos" />
+                        <Button fx:id="btListarPostagens" layoutX="20.0" layoutY="249.0" mnemonicParsing="false" prefHeight="4.0" prefWidth="144.0" styleClass="buttonPerfil" text="Postagens" />
+                        <Label fx:id="lbNomeCompleto" layoutX="182.0" layoutY="30.0" style="-fx-text-fill: white;" text="Nome Completo">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbUsername" layoutX="182.0" layoutY="58.0" style="-fx-text-fill: white;" text="\@user">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="186.0" layoutY="92.0" style="-fx-text-fill: white;" text="E-mail: ">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="186.0" layoutY="109.0" style="-fx-text-fill: white;" text="Telefone: ">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="186.0" layoutY="126.0" style="-fx-text-fill: white;" text="Endereço:">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <ScrollPane fx:id="paneListarAmigos" layoutX="186.0" layoutY="221.0" prefHeight="200.0" prefWidth="372.0">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="372.0">
+                                 <children>
+                                    <ListView fx:id="lvwAmigos" onMouseClicked="#visitar" prefHeight="200.0" prefWidth="372.0" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </ScrollPane>
+                        <ScrollPane fx:id="panePostagens" layoutX="186.0" layoutY="221.0" prefHeight="200.0" prefWidth="372.0">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="372.0">
+                                 <children>
+                                    <ListView fx:id="lvwPostagens" layoutX="-1.0" layoutY="-1.0" prefHeight="200.0" prefWidth="372.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <ScrollPane fx:id="panePedidosP" layoutX="186.0" layoutY="221.0" prefHeight="200.0" prefWidth="372.0">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="372.0">
+                                 <children>
+                                    <ListView fx:id="lvwPedidosP" layoutX="-1.0" layoutY="-1.0" prefHeight="200.0" prefWidth="372.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                        <Label fx:id="lbEmail" layoutX="243.0" layoutY="93.0" style="-fx-text-fill: white;" text="emaildefault">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbTelefone" layoutX="243.0" layoutY="110.0" style="-fx-text-fill: white;" text="telefonedefault">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lbEndereco" layoutX="243.0" layoutY="127.0" style="-fx-text-fill: white;" text="enderecodefault">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btCriarPostagem" layoutX="20.0" layoutY="283.0" mnemonicParsing="false" prefHeight="4.0" prefWidth="144.0" styleClass="buttonPerfil" text="Criar Postagem" />
+                        <Button fx:id="btBuscaAvancada" layoutX="20.0" layoutY="317.0" mnemonicParsing="false" prefHeight="4.0" prefWidth="144.0" styleClass="buttonPerfil" text="Busca Avançada" />
+                        <Button fx:id="btPedidosPendentes" layoutX="21.0" layoutY="351.0" mnemonicParsing="false" prefHeight="4.0" prefWidth="144.0" styleClass="buttonPerfil" text="Pedidos Pendentes" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            <ImageView fitHeight="31.0" fitWidth="75.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@resources/images/Logo%20MyBook%20-%20Branco.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

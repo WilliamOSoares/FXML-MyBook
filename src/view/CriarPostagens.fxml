@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="393.0" prefWidth="520.0" style="-fx-background-color: #1c1c1c;" stylesheets="@resources/CSS%20Code/PerfilCSS.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CriarPostsController">
+   <children>
+      <TextArea fx:id="txCriarPost" layoutX="39.0" layoutY="93.0" prefHeight="124.0" prefWidth="443.0" promptText="Crie a sua postagem!!" styleClass="textField" />
+      <Label layoutX="39.0" layoutY="229.0" style="-fx-text-fill: white;" text="Incluir: " />
+      <Button fx:id="btArquivos" layoutX="82.0" layoutY="226.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="128.0" styleClass="buttonPerfil" text="Arquivos" />
+      <Button fx:id="btConfirmar" layoutX="317.0" layoutY="332.0" mnemonicParsing="false" styleClass="buttonCima" text="Confirmar" />
+      <Button fx:id="btCancelar" layoutX="141.0" layoutY="332.0" mnemonicParsing="false" styleClass="buttonCima" text="Cancelar" />
+      <ImageView fitHeight="56.0" fitWidth="118.0" layoutX="201.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/images/Logo%20MyBook%20-%20Branco.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

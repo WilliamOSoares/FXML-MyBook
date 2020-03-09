@@ -1,0 +1,47 @@
+.buttonPerfil{
+	-fx-border-radius:10;
+	-fx-border-width: 5;
+	-fx-background-color:#095572;
+	-fx-background-radius:10;
+	-fx-padding: 3;
+	-fx-text-fill: white;
+}
+
+
+.buttonPerfil:hover{
+	-fx-background-color: #0563BB;
+}
+
+
+.buttonPerfil:pressed{
+	-fx-background-color: #003F79;
+}
+
+
+.buttonCima{
+	-fx-border-radius:7;
+	-fx-border-width: 5;
+	-fx-background-color:#095572;
+	-fx-background-radius:7;
+	-fx-padding: 7;
+	-fx-text-fill: white;
+}
+
+.buttonCima:hover{
+	-fx-background-color: #0563BB;
+}
+
+.buttonCima:pressed{
+	-fx-background-color: #003F79;
+}
+
+.textField{
+	-fx-background-color: none;
+	-fx-border-color: #363636;
+	-fx-text-fill: gray;
+}
+
+.textField:focused{
+	-fx-border-color: #0563BB;
+}
+
